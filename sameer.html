@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="sameer.css">
+  <script src="https://kit.fontawesome.com/b38e21bcfc.js" crossorigin="anonymous"></script>
+  <title>SAMEER PROFILE</title>
+
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">projects</a></li>
+          <li><a href="#contact">contact</a></li>
+          <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>web developer</p>
+        <h1>Hi, I'm <span>SAMEER</span><br> from Andhra Pradesh</h1>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="img/IMG_20221213_004244.jpg" alt="">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>Seeking a position in a reputed organization like yours
+            to utilize my productive skills, Knowledge and abilities and to add value to the 
+            organization in the process of achieving professional growth</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Programming Languages</span><br>C , Python(basics), Java(basics), Machine Learning(basics)</li>
+              <li><span>Web Development</span><br>HTML , CSS, JavaScript(basics)</li>
+              <li><span>Database</span><br>PostgreSql</li>
+              <li><span>Version Control</span><br>Git & Github</li>
+              <li><span>Tools</span><br>Tableau</li>
+              
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>YBI Founndation</span><br>successfully finished two-month internship in Data Analytics with Python training, where they acquired 
+                
+                </li>
+              <li><span>Edu Skills</span><br>Took part in an AWS-hosted virtual internship program with an emphasis on machine learning 
+                and artificial intelligence (ML & AI). gained eight weeks of hands-on experience implementing 
+                AI and ML solutions
+                </li>
+            </ul>
+          </div>
+
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>BTech (data science)</span><br>studying with an <b>6.58 CGPA</b> from 2024 at Qis College of Engineering and Technology,
+                Ongole
+               </li>
+              <li><span>INTERMIDIATE</span><br>obtained a intermediate with a grade of <b>7.3 CGPA </b>in 2020 from Narayana JR collage
+                College in Kandukur
+               </li>
+              <li><span>SSC</span><br> completed the SSC at B.V.S High school in 2015 with an <b>7.2 CGPA</b></li>
+             
+              
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--projects-->
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="projects-list">
+        <div>
+          <h2> MED CONNECT (The way you connect your life to mobile). </h2><br>
+          <p>Description: Our innovative medical app revolutionizes the way users interact with Health care. With our app, users can input their symptoms and receive immediate. medication recommendations, ensuring timely care. Even in areas with limited internet Access, our app locates nearby hospitals, guaranteeing access to critical medical services.  Tools: Android Studio, Java, XML, SQL lite </p>
+        </div>
+
+        <div>
+          <h2> HR Data Analytic at Acme Tel-com company.</h2><br>
+          <p> Description: In this project we deal with three different data sets which contains the details of employee. Here by using Tableau we analysis the data set for different types of questions. 
+            Tools: Tableau </p>
+        </div>
+
+        
+        <div>
+          <h2>Website Development for Business Owner </h2><br>
+          <p>Description: Developed a user-friendly website to replace manual record keeping for a business owner.  The site streamlined the tracking of expenditures, capital transactions, and raw material costs,  addressing the challenges of paper-based management.
+             Tools: HTML, CSS, PHP, MYSQL, JS 
+
+          </p>
+        </div>
+
+
+      </div>
+
+    </div>
+  </div>
+
+  <!--contact-->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i>sameerbasha1706@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> 9441752506</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <a href="C:\Users\samee\OneDrive\Desktop\sahi\SAMEER BASHA RESUME.docx" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          <input  type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message"  rows="6" placeholder="Your message"></textarea>
+          <button type="submit" class="btn">submit</button>
+                </form>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+      
+    }
+  </script>
+
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemenu.style.right = "0" ;
+    }
+    function closemenu(){
+      sidemenu.style.right = "-200px" ;
+    }
+  </script>
+</body>
+</html>
